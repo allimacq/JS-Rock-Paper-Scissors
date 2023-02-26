@@ -51,8 +51,18 @@ const playRound = (player, computer) => {
 
 const game = () => {
     let i = 5;
+    let winCount = 0;
     while (i > 0) {
-        console.log(playRound());
+        let play = playRound();
+        console.log(play);
+        if (play.includes("Win")) {
+            winCount += 1;
+        }
         i--;
+    }
+    if (winCount > 2) {
+        return "You Won the Game!"
+    } else {
+        return "You Lost."
     }
 }
