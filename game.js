@@ -48,3 +48,11 @@ const playRound = (player, computer) => {
             break;
     }
 }
+
+const game = () => {
+    let i = 5;
+    while (i > 0) {
+        playRound();
+        i--;
+    }
+}
