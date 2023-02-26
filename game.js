@@ -60,9 +60,5 @@ const game = () => {
         }
         i--;
     }
-    if (winCount > 2) {
-        return "You Won the Game!"
-    } else {
-        return "You Lost."
-    }
+    return winCount > 2 ? "You Won the Game!" : "You Lost."
 }
