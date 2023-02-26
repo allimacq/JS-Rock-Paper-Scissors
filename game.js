@@ -52,7 +52,7 @@ const playRound = (player, computer) => {
 const game = () => {
     let i = 5;
     while (i > 0) {
-        playRound();
+        console.log(playRound());
         i--;
     }
 }
